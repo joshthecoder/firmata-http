@@ -3,16 +3,16 @@
   "version": "0.0.1",
   "author": "Joshua Roesslein <jroesslein@gmail.com>",
   "description": "Firmata + HTTP",
-  "keywords": ["firmata", "http", "remote"],
+  "keywords": ["firmata", "http"],
 
   "dependencies": {
-    "firmata": "*"
+    "express": "3.x",
+    "firmata": "0.2.x"
   },
 
-  "bin": {
-    "firmata-http": "./bin/firmata-http"
+  "scripts": {
+    "start": "node ./firmata-http.js"
   },
-  "main": "./lib/index.js",
 
   "engine": {
     "node": ">=0.8"
