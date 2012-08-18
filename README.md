@@ -1,7 +1,23 @@
 Firmata + HTTP
 ==============
-A HTTP server which provides a RESTful API for communicating
-with a microcontroller board that speaks the Firmata protocol.
+A server which provides a HTTP API for accessing a microcontroller.
+Server communicates with the microcontroller using the Firmata protocol.
+
+###Installation
+1. Connect microcontroller to computer which will run the HTTP server.
+2. Upload firmware that implements the Firmata protocol.
+3. Start this server passing it the path to the serial port
+   which connects to the microcontroller.
+
+###Dependencies
+- [Firmata Node library](https://github.com/jgautier/firmata)
+- [Express](expressjs.com)
+- [node-serialport](https://github.com/voodootikigod/node-serialport)
+
+###Microcontroller
+Only the Arduino Uno has been tested so far. Other hardware
+might require some tweaking to get working. Feel free to share any
+fixes or tips.
 
 ###HTTP Endpoints
 
